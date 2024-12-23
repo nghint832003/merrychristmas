@@ -173,21 +173,15 @@ createSnow(200);
 loop();
 
 //----------tree----------
-MorphSVGPlugin.convertToPath("polygon");
 var xmlns = "http://www.w3.org/2000/svg",
-  xlinkns = "http://www.w3.org/1999/xlink",
   select = function (s) {
     return document.querySelector(s);
-  },
-  selectAll = function (s) {
-    return document.querySelectorAll(s);
   },
   pContainer = select(".pContainer"),
   mainSVG = select(".mainSVG"),
   star = select("#star"),
   sparkle = select(".sparkle"),
   tree = select("#tree"),
-  showParticle = true,
   particleColorArray = [
     "#E8F6F8",
     "#ACE8F8",
@@ -196,11 +190,9 @@ var xmlns = "http://www.w3.org/2000/svg",
     "#B74551",
     "#5DBA72",
     "#910B28",
-    "#910B28",
     "#446D39",
   ],
   particleTypeArray = ["#star", "#circ", "#cross", "#heart"],
-  // particleTypeArray = ['#star'],
   particlePool = [],
   particleCount = 0,
   numParticles = 201;
@@ -208,6 +200,10 @@ var xmlns = "http://www.w3.org/2000/svg",
 gsap.set("svg", {
   visibility: "visible",
 });
+
+// Tạo hiệu ứng mà không dùng MorphSVGPlugin
+gsap.to("#star", { duration: 1, scale: 1.2, repeat: -1, yoyo: true });
+
 
 gsap.set(sparkle, {
   transformOrigin: "50% 50%",
