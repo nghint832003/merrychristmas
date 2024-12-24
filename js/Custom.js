@@ -3,6 +3,7 @@ var sound = new Howl({
     loop: true
   });
 
+
 function loading() {
     $('body').css('height', $(window).height());
     $('#loading').css('visibility', 'visible');
