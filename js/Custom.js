@@ -195,12 +195,12 @@ $(document).ready(function() {
                     $(".message").typed({
                         strings: [
                         "<<< Merry Christmas >>>",
-                        "Giáng sinh zui ze nha !!!, Chúc bản thân luôn thành công trên con đường đã chọn. Một mùa noel thật ấm áp nha.",
+                        "Giáng sinh vui vẻ nha!!!, Chúc Thoa luôn thành công trên con đường đã chọn và nhớ giữ gìn sức khỏe, ăn uống đủ bữa đó. Merry Christmas!!!",
                         ],
-                        typeSpeed: 250,
-                        startDelay: 100,
-                        backSpeed: 500,
-                        backDelay: 250,
+                        typeSpeed: 25,
+                        startDelay: 10,
+                        backSpeed: 50,
+                        backDelay: 25,
                         loop: true,
                         contentType: 'html',
                         showCursor: false
