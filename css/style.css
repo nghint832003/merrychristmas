@@ -147,6 +147,7 @@ body {
 	display: none;
 	background: url("../imgs/letter.png") no-repeat;
 	position: relative;
+	top: -50px;
 	width: 367px;
 	height: 300px;
 	margin: 0 auto;
